@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://monument.example/</loc></url>
+  <url><loc>https://monument.example/about</loc></url>
+  <url><loc>https://monument.example/services</loc></url>
+  <url><loc>https://monument.example/work</loc></url>
+  <url><loc>https://monument.example/insights</loc></url>
+  <url><loc>https://monument.example/contact</loc></url>
+</urlset>
