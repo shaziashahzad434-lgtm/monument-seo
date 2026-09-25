@@ -18,20 +18,20 @@ export default function Navbar() {
       <header
         className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 border-b ${
           scrolled
-            ? 'bg-black/85 backdrop-blur-md border-gray-800 py-4'
+            ? 'bg-white/95 backdrop-blur-md border-gray-800 py-4'
             : 'border-transparent py-6'
         }`}
       >
         <nav className="max-w-wrap mx-auto px-6 md:px-10 flex items-center justify-between">
           <Link to="/" className="font-display font-bold text-lg tracking-tight">
-            MONUMENT
+            LINKNEST
           </Link>
 
-          <div className="hidden md:flex items-center gap-10 text-sm text-gray-300">
-            <Link to="/work" className="hover:text-white transition-colors" data-cursor="VIEW">Work</Link>
-            <Link to="/services" className="hover:text-white transition-colors">Services</Link>
-            <Link to="/about" className="hover:text-white transition-colors">About</Link>
-            <Link to="/insights" className="hover:text-white transition-colors">Insights</Link>
+          <div className="hidden md:flex items-center gap-10 text-sm text-gray-900">
+            <Link to="/Websites" className="transition-colors" data-cursor="VIEW">WEBSITE</Link>
+            <Link to="/services" className="transition-colors">Services</Link>
+            <Link to="/about" className="transition-colors">About</Link>
+            <Link to="/insights" className="transition-colors">Insights</Link>
           </div>
 
           <Link

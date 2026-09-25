@@ -10,7 +10,8 @@ export default function Services() {
     <div className="pt-36 pb-24">
       <div className="max-w-wrap mx-auto px-6 md:px-10">
         <SectionHeading
-          title="WHAT WE DO"
+          title="WHAT WE OFFER"
+
           subtitle="Eight disciplines, one team — coordinated instead of contracted out."
         />
         <div>

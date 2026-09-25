@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="max-w-wrap mx-auto px-6 md:px-10">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-10 pb-14">
           <div className="col-span-2 md:col-span-1">
-            <div className="font-display font-bold text-lg mb-4">MONUMENT</div>
+            <div className="font-display font-bold text-lg mb-4">LINKNEST</div>
             <p className="text-muted text-sm max-w-[32ch]">
               A technical SEO and organic growth studio, working with ambitious brands who want to be found.
             </p>
@@ -44,7 +44,7 @@ export default function Footer() {
             WebkitTextStroke: '1px #2A2A2A',
           }}
         >
-          MONUMENT
+          LINKNEST
         </div>
 
         <div className="flex flex-wrap justify-between gap-3 mt-5 text-xs text-muted">

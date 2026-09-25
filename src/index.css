@@ -7,8 +7,8 @@ html {
 }
 
 body {
-  background: #080808;
-  color: #FFFFFF;
+  background: #FAFAF7;
+  color: #202124;
   font-family: 'Inter', sans-serif;
 }
 
@@ -24,8 +24,8 @@ h1, h2, h3 {
 }
 
 ::selection {
-  background: #FF5A00;
-  color: #080808;
+  background: #2F7D6D;
+  color: #FAFAF7;
 }
 
 .reveal {

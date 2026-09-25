@@ -100,11 +100,11 @@ export default function Home() {
             className="text-sm text-muted flex items-center gap-2.5 mb-6"
           >
             <span className="w-6 h-px bg-orange inline-block" />
-            SEO / STRATEGY / GROWTH
+            GUEST POSTS / SEO / LINK BUILDING
           </motion.div>
 
           <h1 className="font-display font-semibold leading-[0.96] max-w-[16ch]" style={{ fontSize: 'clamp(2.6rem,7.5vw,6.4rem)' }}>
-            {['WE TURN', 'SEARCH INTO', 'GROWTH.'].map((line, i) => (
+            {['WE BUILD', 'QUALITY LINKS', 'VISIBILITY.'].map((line, i) => (
               <span key={line} className="block overflow-hidden">
                 <motion.span
                   className={`block ${i === 2 ? 'text-orange' : ''}`}
@@ -124,7 +124,7 @@ export default function Home() {
             transition={{ delay: 0.75, duration: 0.6 }}
             className="mt-7 text-lg text-gray-300 max-w-[44ch]"
           >
-            Technical SEO, strategic content and digital growth systems built to make ambitious brands impossible to ignore.
+            LinkNest helps brands find quality websites for guest posts, build relevant backlinks and grow their search visibility.
           </motion.p>
 
           <motion.div
@@ -138,13 +138,13 @@ export default function Home() {
               data-cursor="VIEW"
               className="bg-orange text-black font-semibold text-sm px-6 py-3.5 rounded-sm inline-flex items-center gap-2 hover:bg-[#E65200] transition-colors"
             >
-              Explore Our Work →
+              Explore Guest Post Sites →
             </Link>
             <Link
               to="/contact"
               className="border border-gray-700 text-sm px-5 py-3.5 rounded-sm hover:border-white hover:bg-white/5 transition-colors"
             >
-              Start a Project
+              Find Guest Post Opportunities
             </Link>
           </motion.div>
         </div>
@@ -163,11 +163,11 @@ export default function Home() {
           <line x1="0" y1="420" x2="400" y2="420" stroke="#2A2A2A" strokeDasharray="2 6" />
           <polyline
             points="0,380 60,360 110,300 160,320 210,220 260,240 310,120 400,60"
-            stroke="#FF5A00"
+            stroke="#2F7D6D"
             strokeWidth="2"
             fill="none"
           />
-          <circle cx="400" cy="60" r="5" fill="#FF5A00" />
+          <circle cx="400" cy="60" r="5" fill="#2F7D6D" />
           <text x="0" y="405" fill="#5A5A54" fontSize="11" fontFamily="Space Grotesk">Q1</text>
           <text x="370" y="405" fill="#5A5A54" fontSize="11" fontFamily="Space Grotesk">Q4</text>
         </motion.svg>
@@ -191,10 +191,10 @@ export default function Home() {
           <div className="bg-orange w-px" />
           <div>
             <h2 className="font-display font-semibold leading-tight max-w-[14ch]" style={{ fontSize: 'clamp(1.9rem,4.2vw,3.2rem)' }}>
-              SEO ISN'T ABOUT RANKINGS. IT'S ABOUT RELEVANCE.
+              QUALITY LINKS. REAL SEO VALUE.
             </h2>
             <p className="mt-9 max-w-[52ch] text-gray-300">
-              We combine technical precision, search intelligence and compelling content to build organic growth that compounds — not a spike from a single campaign, but a system that keeps earning visibility long after we've handed it to you.
+              We help brands find quality websites for guest posts, build relevant backlinks and grow their search visibility.
             </p>
           </div>
         </div>
@@ -203,17 +203,17 @@ export default function Home() {
       {/* Stats */}
       <section className="bg-gray-950 py-24">
         <div className="max-w-wrap mx-auto px-6 md:px-10 grid grid-cols-2 md:grid-cols-4 gap-9">
-          <Stat value={312} suffix="%" label="Organic traffic growth, average client" />
-          <Stat value={187} suffix="%" label="Growth in qualified leads" />
-          <Stat value={4.8} suffix="X" label="Average return on investment" />
-          <Stat value={92} suffix="%" label="Client retention, year over year" />
+          <Stat value={312} suffix="%" label="Guest post opportunities available" />
+          <Stat value={187} suffix="%" label="Relevant websites for guest posting" />
+          <Stat value={4.8} suffix="X" label="SEO value from quality backlinks" />
+          <Stat value={92} suffix="%" label="Quality sites for long-term SEO" />
         </div>
       </section>
 
       {/* Services preview */}
       <section className="py-24 md:py-32">
         <div className="max-w-wrap mx-auto px-6 md:px-10">
-          <SectionHeading title="WHAT WE DO" subtitle="Eight disciplines, one team — coordinated instead of contracted out." />
+          <SectionHeading title="WHAT WE OFFER" subtitle="Eight disciplines, one team — coordinated instead of contracted out." />
           <div>
             {services.map((s) => (
               <ServiceRow key={s.num} s={s} />
@@ -230,7 +230,7 @@ export default function Home() {
       {/* Process */}
       <section className="py-24 md:py-32">
         <div className="max-w-wrap mx-auto px-6 md:px-10">
-          <SectionHeading title="FROM SEARCH TO SIGNIFICANCE" subtitle="The same six stages, every engagement, every cycle." />
+          <SectionHeading title="HOW LINKNEST WORKS" subtitle="A simple process for finding, evaluating and placing quality guest posts." />
           <div className="relative">
             <div className="absolute left-8 top-0 bottom-0 w-px bg-gray-800" />
             {processSteps.map((step) => (
@@ -249,7 +249,7 @@ export default function Home() {
       {/* Case studies preview */}
       <section className="py-24 md:py-32">
         <div className="max-w-wrap mx-auto px-6 md:px-10">
-          <SectionHeading title="PROOF, NOT PROMISES." subtitle="A sample of engagements and what they moved." />
+          <SectionHeading title="QUALITY SITES, REAL OPPORTUNITIES." subtitle="Explore quality guest post sites and backlink opportunities for your SEO." />
           <div className="flex flex-col">
             {caseStudies.map((c, i) => (
               <div
@@ -283,7 +283,7 @@ export default function Home() {
           </div>
           <div className="mt-8">
             <Link to="/work" data-cursor="VIEW" className="text-sm border-b border-white pb-1 hover:border-orange hover:text-orange transition-colors">
-              See all case studies →
+              Browse All Guest Post Sites →
             </Link>
           </div>
         </div>
@@ -295,7 +295,7 @@ export default function Home() {
           <p className="font-display font-medium leading-snug max-w-[26ch]" style={{ fontSize: 'clamp(1.5rem,3.4vw,2.3rem)' }}>
             "Within months, organic search became one of our strongest acquisition channels — and one we finally understood."
           </p>
-          <p className="mt-7 text-sm text-muted">Head of Growth, Northstar Commerce</p>
+          <p className="mt-7 text-sm text-muted">Head of VISIBILITY, Northstar Commerce</p>
         </div>
       </section>
 
@@ -307,17 +307,17 @@ export default function Home() {
         />
         <div ref={ctaRef} className="reveal max-w-wrap mx-auto px-6 md:px-10 relative">
           <h2 className="font-display font-semibold leading-[0.98]" style={{ fontSize: 'clamp(2.4rem,7vw,5.2rem)' }}>
-            READY TO BE<br />FOUND?
+            READY TO BUILD<br />VISIBLE?
           </h2>
           <p className="mt-6 text-lg text-gray-300 max-w-[40ch]">
-            Let's build an organic growth engine that works while you sleep.
+            Let's build an organic VISIBILITY engine that works while you sleep.
           </p>
           <Link
             to="/contact"
             data-cursor="OPEN"
             className="mt-9 inline-flex bg-orange text-black font-semibold text-sm px-6 py-3.5 rounded-sm hover:bg-[#E65200] transition-colors"
           >
-            Start a Conversation →
+            Explore LinkNest →
           </Link>
         </div>
       </section>
