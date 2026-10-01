@@ -8,7 +8,7 @@ export default function Footer() {
           <div className="col-span-2 md:col-span-1">
             <div className="font-display font-bold text-lg mb-4">LINKNEST</div>
             <p className="text-muted text-sm max-w-[32ch]">
-              A technical SEO and organic growth studio, working with ambitious brands who want to be found.
+              LinkNest helps brands find quality websites for guest posts, build relevant backlinks and grow their search visibility.
             </p>
           </div>
           <div>
@@ -20,18 +20,18 @@ export default function Footer() {
           </div>
           <div>
             <h4 className="text-xs text-muted mb-4 font-medium">SERVICES</h4>
-            <Link to="/services" className="block text-sm text-gray-200 mb-2.5 hover:text-orange">Technical SEO</Link>
-            <Link to="/services" className="block text-sm text-gray-200 mb-2.5 hover:text-orange">Content Strategy</Link>
-            <Link to="/services" className="block text-sm text-gray-200 mb-2.5 hover:text-orange">Local SEO</Link>
-            <Link to="/services" className="block text-sm text-gray-200 mb-2.5 hover:text-orange">E-commerce SEO</Link>
+            <Link to="/services" className="block text-sm text-gray-200 mb-2.5 hover:text-orange">Guest Post Placement</Link>
+            <Link to="/services" className="block text-sm text-gray-200 mb-2.5 hover:text-orange">Guest Post Outreach</Link>
+            <Link to="/services" className="block text-sm text-gray-200 mb-2.5 hover:text-orange">Link Insertion</Link>
+            <Link to="/services" className="block text-sm text-gray-200 mb-2.5 hover:text-orange">Sponsored Posts</Link>
           </div>
           <div>
             <h4 className="text-xs text-muted mb-4 font-medium">CONNECT</h4>
-            <a href="#" className="block text-sm text-gray-200 mb-2.5 hover:text-orange">LinkedIn</a>
+            
             <a href="#" className="block text-sm text-gray-200 mb-2.5 hover:text-orange">Instagram</a>
             <a href="#" className="block text-sm text-gray-200 mb-2.5 hover:text-orange">X</a>
-            <a href="mailto:hello@monument.example" className="block text-sm text-gray-200 mb-2.5 hover:text-orange">
-              hello@monument.example
+            <a href="mailto:seolinknest@gmail.com" className="block text-sm text-gray-200 mb-2.5 hover:text-orange">
+              seolinknest@gmail.com
             </a>
           </div>
         </div>
@@ -41,15 +41,15 @@ export default function Footer() {
           style={{
             fontSize: 'clamp(3rem, 14vw, 9rem)',
             color: '#151515',
-            WebkitTextStroke: '1px #2A2A2A',
+            WebkitTextStroke: '1px #2A2A2A'
           }}
         >
           LINKNEST
         </div>
 
         <div className="flex flex-wrap justify-between gap-3 mt-5 text-xs text-muted">
-          <span>© 2026 Monument SEO Studio</span>
-          <span>Search / Strategy / Growth</span>
+          <span>© 2026 LinkNest</span>
+          <span>Guest Posts / Backlinks / SEO</span>
         </div>
       </div>
     </footer>

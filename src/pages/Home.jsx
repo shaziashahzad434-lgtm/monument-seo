@@ -39,7 +39,7 @@ function Stat({ value, suffix, label }) {
 
   return (
     <div ref={ref}>
-      <div className="font-display font-semibold text-4xl md:text-5xl">{display}</div>
+      <div className="font-display font-semibold text-4xl md:text-5xl text-white">{display}</div>
       <div className="text-muted text-sm mt-2 max-w-[20ch]">{label}</div>
     </div>
   );
@@ -104,7 +104,7 @@ export default function Home() {
           </motion.div>
 
           <h1 className="font-display font-semibold leading-[0.96] max-w-[16ch]" style={{ fontSize: 'clamp(2.6rem,7.5vw,6.4rem)' }}>
-            {['WE BUILD', 'QUALITY LINKS', 'VISIBILITY.'].map((line, i) => (
+            {['FIND QUALITY', 'GUEST POST', 'OPPORTUNITIES.'].map((line, i) => (
               <span key={line} className="block overflow-hidden">
                 <motion.span
                   className={`block ${i === 2 ? 'text-orange' : ''}`}
@@ -246,10 +246,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Case studies preview */}
+       {/* Guest Post Opportunities */}
       <section className="py-24 md:py-32">
         <div className="max-w-wrap mx-auto px-6 md:px-10">
-          <SectionHeading title="QUALITY SITES, REAL OPPORTUNITIES." subtitle="Explore quality guest post sites and backlink opportunities for your SEO." />
+          <SectionHeading title="QUALITY SITES, REAL OPPORTUNITIES." subtitle="Explore guest post websites and backlink opportunities acrs for your SEO." />
           <div className="flex flex-col">
             {caseStudies.map((c, i) => (
               <div
@@ -258,10 +258,9 @@ export default function Home() {
                   i === caseStudies.length - 1 ? 'border-b' : ''
                 }`}
               >
-                <div className={`aspect-[4/3] bg-gradient-to-br from-gray-900 to-black border border-gray-800 rounded-sm relative overflow-hidden ${i % 2 === 1 ? 'md:order-2' : ''}`}>
-                  <span className="absolute top-4.5 left-4.5 text-xs text-muted font-display">
-                    {c.client} — {c.industry}
-                  </span>
+                <div className={`aspect-[4/3] bg-gray-950 border border-gray-800 rounded-sm relative overflow-hidden flex flex-col justify-between ${i % 2 === 1 ? 'md:order-2' : ''}`}>
+                  {c.slug === "techbullion" && (<img src="/techbullion.png" alt={c.client} className="absolute inset-0 w-full h-full object-cover" />)}
+                  {c.slug === "mobileappdaily" && (<img src="/mobileappdaily.png" alt={c.client} className="absolute inset-0 w-full h-full object-cover" />)}
                 </div>
                 <div>
                   <div className="text-orange text-sm font-display mb-3.5">{c.client.toUpperCase()}</div>
@@ -295,7 +294,7 @@ export default function Home() {
           <p className="font-display font-medium leading-snug max-w-[26ch]" style={{ fontSize: 'clamp(1.5rem,3.4vw,2.3rem)' }}>
             "Within months, organic search became one of our strongest acquisition channels — and one we finally understood."
           </p>
-          <p className="mt-7 text-sm text-muted">Head of VISIBILITY, Northstar Commerce</p>
+          <p className="mt-7 text-sm text-muted">Head of VISIBILITY, Guest Post Marketplace</p>
         </div>
       </section>
 
@@ -307,17 +306,17 @@ export default function Home() {
         />
         <div ref={ctaRef} className="reveal max-w-wrap mx-auto px-6 md:px-10 relative">
           <h2 className="font-display font-semibold leading-[0.98]" style={{ fontSize: 'clamp(2.4rem,7vw,5.2rem)' }}>
-            READY TO BUILD<br />VISIBLE?
+            READY TO BUILD<br />QUALITY LINKS?
           </h2>
-          <p className="mt-6 text-lg text-gray-300 max-w-[40ch]">
-            Let's build an organic VISIBILITY engine that works while you sleep.
+          <p className="mt-6 text-lg text-white max-w-[40ch]">
+            Find quality guest post opportunities and build backlinks that support your SEO growth.
           </p>
           <Link
             to="/contact"
             data-cursor="OPEN"
             className="mt-9 inline-flex bg-orange text-black font-semibold text-sm px-6 py-3.5 rounded-sm hover:bg-[#E65200] transition-colors"
           >
-            Explore LinkNest →
+            Explore Guest Post Sites →
           </Link>
         </div>
       </section>
