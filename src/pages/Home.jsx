@@ -261,6 +261,10 @@ export default function Home() {
                 <div className={`aspect-[4/3] bg-gray-950 border border-gray-800 rounded-sm relative overflow-hidden flex flex-col justify-between ${i % 2 === 1 ? 'md:order-2' : ''}`}>
                   {c.slug === "techbullion" && (<img src="/techbullion.png" alt={c.client} className="absolute inset-0 w-full h-full object-cover" />)}
                   {c.slug === "mobileappdaily" && (<img src="/mobileappdaily.png" alt={c.client} className="absolute inset-0 w-full h-full object-cover" />)}
+                  {c.slug === "buildd" && (<img src="/buildd.png" alt={c.client} className="absolute inset-0 w-full h-full object-cover" />)}
+                  {c.slug === "urbansplatter" && (<img src="/urbansplatter.png" alt={c.client} className="absolute inset-0 w-full h-full object-cover" />)}
+                  {c.slug === "teachmama" && (<img src="/teachmama.png" alt={c.client} className="absolute inset-0 w-full h-full object-cover" />)}
+                  {c.slug === "techimply" && (<img src="/techimply.png" alt={c.client} className="absolute inset-0 w-full h-full object-cover" />)}
                 </div>
                 <div>
                   <div className="text-orange text-sm font-display mb-3.5">{c.client.toUpperCase()}</div>
