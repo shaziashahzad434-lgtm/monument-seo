@@ -6,6 +6,7 @@ export default function CaseStudies() {
     <div className="pt-36 pb-24">
       <div className="max-w-wrap mx-auto px-6 md:px-10">
         <SectionHeading title="PROOF, NOT PROMISES." subtitle="Full engagements, from challenge to result." />
+
         <div className="flex flex-col">
           {caseStudies.map((c, i) => (
             <div
@@ -14,28 +15,80 @@ export default function CaseStudies() {
                 i === caseStudies.length - 1 ? 'border-b' : ''
               }`}
             >
-              <div className={`aspect-[4/3] bg-gradient-to-br from-gray-900 to-black border border-gray-800 rounded-sm relative overflow-hidden ${i % 2 === 1 ? 'md:order-2' : ''}`}>
-                <span className="absolute top-4.5 left-4.5 text-xs text-muted font-display">
+              <div
+                className={`aspect-[4/3] bg-gray-950 border border-gray-800 rounded-sm relative overflow-hidden ${
+                  i % 2 === 1 ? 'md:order-2' : ''
+                }`}
+              >
+                {c.slug === 'techbullion' && (
+                  <img
+                    src="/techbullion.png"
+                    alt={c.client}
+                    className="absolute inset-0 w-full h-full object-cover"
+                  />
+                )}
+
+                {c.slug === 'mobileappdaily' && (
+                  <img
+                    src="/mobileappdaily.png"
+                    alt={c.client}
+                    className="absolute inset-0 w-full h-full object-cover"
+                  />
+                )}
+
+                {c.slug === 'buildd' && (
+                  <img
+                    src="/buildd.png"
+                    alt={c.client}
+                    className="absolute inset-0 w-full h-full object-cover"
+                  />
+                )}
+
+                {c.slug === 'urbansplatter' && (
+                  <img
+                    src="/urbansplatter.png"
+                    alt={c.client}
+                    className="absolute inset-0 w-full h-full object-cover"
+                  />
+                )}
+
+                {c.slug === 'teachmama' && (
+                  <img
+                    src="/teachmama.png"
+                    alt={c.client}
+                    className="absolute inset-0 w-full h-full object-cover"
+                  />
+                )}
+
+                {c.slug === 'techimply' && (
+                  <img
+                    src="/techimply.png"
+                    alt={c.client}
+                    className="absolute inset-0 w-full h-full object-cover"
+                  />
+                )}
+
+                <span className="absolute top-4.5 left-4.5 text-xs text-white font-display bg-black/60 px-2 py-1">
                   {c.client} — {c.industry}
                 </span>
-                <svg viewBox="0 0 300 100" preserveAspectRatio="none" className="absolute bottom-0 left-0 w-full h-3/5">
-                  <polyline points="0,90 60,78 120,55 180,60 240,25 300,8" fill="none" stroke="#FF5A00" strokeWidth="2" />
-                </svg>
               </div>
+
               <div>
-                <div className="text-orange text-sm font-display mb-3.5">{c.client.toUpperCase()} · {c.industry.toUpperCase()}</div>
-                <h3 className="font-display font-semibold max-w-[16ch]" style={{ fontSize: 'clamp(1.5rem,2.6vw,2.1rem)' }}>
+                <div className="text-orange text-sm font-display mb-3.5">
+                  {c.client.toUpperCase()} · {c.industry.toUpperCase()}
+                </div>
+
+                <h3
+                  className="font-display font-semibold max-w-[18ch]"
+                  style={{ fontSize: 'clamp(1.5rem,2.6vw,2.1rem)' }}
+                >
                   {c.title}
                 </h3>
 
                 <div className="mt-6 space-y-4 text-sm">
                   <div>
-                    <div className="text-muted mb-1">Challenge</div>
-                    <p className="text-gray-200 max-w-[52ch]">{c.challenge}</p>
-                  </div>
-                  <div>
-                    <div className="text-muted mb-1">Strategy</div>
-                    <p className="text-gray-200 max-w-[52ch]">{c.strategy}</p>
+                    <div className="text-muted mb-1">Details</div>
+                    <p className="text-gray-200 max-w-[52ch]">{c.desc}</p>
                   </div>
                 </div>
 
