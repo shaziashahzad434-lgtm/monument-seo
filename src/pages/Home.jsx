@@ -147,7 +147,7 @@ export default function Home() {
             className="mt-9 flex flex-wrap gap-4 items-center"
           >
             <Link
-              to="/work"
+              to="/guest-post-sites"
               data-cursor="VIEW"
               className="bg-orange text-black font-semibold text-sm leading-none px-6 py-3 rounded-sm border-2 border-orange inline-flex items-center justify-center gap-2 hover:bg-[#E65200] transition-colors"
             >
@@ -389,7 +389,7 @@ export default function Home() {
             ))}
           </div>
           <div className="mt-8">
-            <Link to="/work" data-cursor="VIEW" className="text-sm border-b border-white pb-1 hover:border-orange hover:text-orange transition-colors">
+            <Link to="/guest-post-sites" data-cursor="VIEW" className="text-sm border-b border-white pb-1 hover:border-orange hover:text-orange transition-colors">
               Browse All Guest Post Sites →
             </Link>
           </div>
@@ -420,7 +420,7 @@ export default function Home() {
             Find quality guest post opportunities and build backlinks that support your SEO growth.
           </p>
           <Link
-            to="/contact"
+            to="/guest-post-sites"
             data-cursor="OPEN"
             className="mt-9 inline-flex bg-orange text-black font-semibold text-sm px-6 py-3.5 rounded-sm hover:bg-[#E65200] transition-colors"
           >
