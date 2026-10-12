@@ -124,7 +124,7 @@ export default function GuestPostSites() {
           {filteredSites.map((site, index) => (
             <article
               key={`${site.Website}-${index}`}
-              className="rounded-xl border border-gray-800 bg-gray-900 p-6"
+              className="rounded-xl border border-gray-800 bg-gray-900 p-6 flex flex-col h-full"
             >
               <h2 className="text-xl font-bold mb-2 break-words">
                 {site.Website}
@@ -181,7 +181,7 @@ export default function GuestPostSites() {
 
               <a
                 href="/contact"
-                className="mt-6 w-full bg-emerald-700 hover:bg-emerald-600 rounded-md px-4 py-3 font-semibold flex justify-center transition-colors"
+                className="mt-auto pt-6 w-full bg-emerald-700 hover:bg-emerald-600 rounded-md px-4 py-3 font-semibold flex justify-center transition-colors"
               >
                 Ask About This Website
               </a>
