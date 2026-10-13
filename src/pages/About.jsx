@@ -2,15 +2,15 @@ import useReveal from '../components/useReveal.js';
 import SectionHeading from '../components/SectionHeading.jsx';
 
 const principles = [
-  { t: 'Strategy Before Tactics', d: "We don't start with a checklist. We start with your market, your margins, and what's actually worth ranking for." },
-  { t: 'Data With Context', d: 'A number without context is noise. We explain what moved, why, and whether it matters to the business.' },
-  { t: 'Technical Precision', d: 'Search engines reward sites that work. We fix the infrastructure most agencies skip past.' },
-  { t: 'Content That Converts', d: 'Traffic is not the goal. We write for the person who is about to decide, not just the algorithm.' },
-  { t: 'Growth That Compounds', d: 'We build systems that keep earning visibility after the engagement ends, not a rented spike.' },
+  { t: 'Quality Over Quantity', d: "We focus on relevant websites and guest post opportunities that match each client's niche and SEO goals." },
+  { t: 'Clear Website Information', d: 'We aim to provide clear website details, pricing, niches, and publishing timelines so clients can make informed decisions.' },
+  { t: 'Relevant Backlink Opportunities', d: 'We help clients explore guest post placements and backlink opportunities that fit their industry and target audience.' },
+  { t: 'A Practical Approach', d: 'We help clients find practical guest posting options that suit their requirements and budget.' },
+  { t: 'Long-Term SEO Growth', d: 'We believe sustainable SEO starts with relevant websites, thoughtful link building, and consistent effort.' },
 ];
 
 const stack = [
-  'Google Search Console', 'Google Analytics', 'Ahrefs', 'Semrush', 'Screaming Frog', 'PageSpeed Insights', 'Looker Studio',
+  'Guest Post Opportunities', 'Publisher Information', 'Website Metrics', 'Niche Relevance', 'Publishing Timelines', 'Link Building Options',
 ];
 
 export default function About() {
@@ -27,7 +27,7 @@ export default function About() {
               WHY BRANDS CHOOSE US.
             </h1>
             <p className="mt-8 max-w-[56ch] text-gray-300">
-              Monument is a small, senior team of SEO strategists, technical auditors and writers. We work with a limited number of clients at a time, because organic growth takes real attention, not a rotating account manager.
+              LinkNest helps businesses, agencies, and SEO professionals discover quality websites for guest posting and relevant backlink opportunities. We focus on clear website information, publisher outreach, and helping clients find opportunities that align with their SEO goals.
             </p>
           </div>
         </div>
@@ -43,7 +43,7 @@ export default function About() {
         </div>
 
         <div ref={stackRef} className="reveal">
-          <SectionHeading title="THE STACK BEHIND THE GROWTH" subtitle="The tools we work in daily — not a claim of partnership or certification." />
+          <SectionHeading title="OUR APPROACH" subtitle="We bring guest post opportunities and publisher information together in one place, helping businesses and agencies explore relevant websites, review available details, and discuss potential placements." />
           <div className="flex flex-wrap gap-x-10 gap-y-5">
             {stack.map((s) => (
               <span key={s} className="font-display text-lg text-gray-300">{s}</span>
