@@ -13,7 +13,7 @@ export default function Footer() {
           </div>
           <div>
             <h4 className="text-xs text-muted mb-4 font-medium">NAVIGATE</h4>
-            <Link to="/work" className="block text-sm text-gray-200 mb-2.5 hover:text-orange">Work</Link>
+            <Link to="/work" className="block text-sm text-gray-200 mb-2.5 hover:text-orange">Guest Post Sites</Link>
             <Link to="/services" className="block text-sm text-gray-200 mb-2.5 hover:text-orange">Services</Link>
             <Link to="/about" className="block text-sm text-gray-200 mb-2.5 hover:text-orange">About</Link>
             <Link to="/contact" className="block text-sm text-gray-200 mb-2.5 hover:text-orange">Contact</Link>

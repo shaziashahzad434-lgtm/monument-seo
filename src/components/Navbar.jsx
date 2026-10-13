@@ -28,7 +28,7 @@ export default function Navbar() {
           </Link>
 
           <div className="hidden md:flex items-center gap-10 text-sm text-gray-900">
-            <Link to="/Websites" className="transition-colors" data-cursor="VIEW">WEBSITE</Link>
+            <Link to="/Websites" className="transition-colors" data-cursor="VIEW">Guest Post Sites</Link>
             <Link to="/services" className="transition-colors">Services</Link>
             <Link to="/about" className="transition-colors">About</Link>
             <Link to="/insights" className="transition-colors">Insights</Link>

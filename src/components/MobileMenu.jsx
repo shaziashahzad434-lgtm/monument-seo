@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { X } from 'lucide-react';
 
 const links = [
-  { to: '/work', label: 'Work' },
+  { to: '/work', label: 'Guest Post Sites' },
   { to: '/services', label: 'Services' },
   { to: '/about', label: 'About' },
   { to: '/insights', label: 'Insights' },
