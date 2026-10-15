@@ -12,6 +12,7 @@ import Contact from './pages/Contact.jsx';
 import GuestPostingArticle from './pages/GuestPostingArticle.jsx';
 import BestGuestPostSites from './pages/BestGuestPostSites.jsx';
 import EvaluateGuestPostWebsite from "./pages/EvaluateGuestPostWebsite.jsx";
+import GuestPostPricing from "./pages/GuestPostPricing.jsx";
 import GuestPostSites from "./pages/GuestPostSites.jsx";
 export default function App() {
   const location = useLocation();
@@ -35,6 +36,7 @@ export default function App() {
           <Route path="/guest-posting-article" element={<GuestPostingArticle />} />
           <Route path="/best-guest-post-sites" element={<BestGuestPostSites />} />
           <Route path="/evaluate-guest-post-website" element={<EvaluateGuestPostWebsite />} />
+          <Route path="/guest-post-pricing" element={<GuestPostPricing />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>

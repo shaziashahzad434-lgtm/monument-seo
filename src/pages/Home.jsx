@@ -300,6 +300,11 @@ export default function Home() {
           <p className="text-xs text-orange font-medium mt-3">GUEST POST WEBSITE EVALUATION</p>
           <h3 className="text-lg font-semibold text-gray-900 mt-1 group-hover:underline">How to Evaluate a Guest Post Website Before Buying a Placement</h3>
         </a>
+        <a href="/guest-post-pricing" className="block group cursor-pointer">
+          <img src="/guest-post-pricing.png" alt="Guest Post Pricing and SEO Link Building" className="w-full aspect-[16/9] object-cover rounded-sm border border-gray-200" />
+          <p className="text-xs text-orange font-medium mt-3">GUEST POST PRICING & SEO</p>
+          <h3 className="text-lg font-semibold text-gray-900 mt-1 group-hover:underline">Guest Post Pricing: What Should You Expect to Pay?</h3>
+        </a>
       </div>
     </div>
   </div>
