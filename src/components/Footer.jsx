@@ -28,6 +28,7 @@ export default function Footer() {
           <div>
             <h4 className="text-xs text-muted mb-4 font-medium">CONNECT</h4>
             
+            <a href="https://www.facebook.com/profile.php?id=61595347923024" target="_blank" rel="noopener noreferrer" className="block text-sm text-gray-200 mb-2.5 hover:text-orange">Facebook</a>
             <a href="#" className="block text-sm text-gray-200 mb-2.5 hover:text-orange">Instagram</a>
             <a href="#" className="block text-sm text-gray-200 mb-2.5 hover:text-orange">X</a>
             <a href="mailto:seolinknest@gmail.com" className="block text-sm text-gray-200 mb-2.5 hover:text-orange">
