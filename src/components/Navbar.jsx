@@ -23,8 +23,8 @@ export default function Navbar() {
         }`}
       >
         <nav className="max-w-wrap mx-auto px-6 md:px-10 flex items-center justify-between">
-          <Link to="/" className="font-display font-bold text-lg tracking-tight">
-            LINKNEST
+          <Link to="/" className="flex items-center">
+            <img src="/linknest-logo.png" alt="LinkNest" className="h-20 w-auto object-contain" />
           </Link>
 
           <div className="hidden md:flex items-center gap-10 text-sm text-gray-900">
