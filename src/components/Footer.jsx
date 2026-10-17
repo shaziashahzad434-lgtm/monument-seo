@@ -28,7 +28,7 @@ export default function Footer() {
           <div>
             <h4 className="text-xs text-muted mb-4 font-medium">CONNECT</h4>
             
-            <a href="https://www.facebook.com/profile.php?id=61595347923024" target="_blank" rel="noopener noreferrer" className="block text-sm text-gray-200 mb-2.5 hover:text-orange">Facebook</a>
+            <a href="https://www.facebook.com/profile.php?id=61595347923024" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-gray-200 mb-2.5 hover:text-orange"><svg viewBox="0 0 24 24" width="18" height="18" fill="#1877F2" aria-hidden="true"><path d="M24 12a12 12 0 1 0-13.875 11.85v-8.38H7.078V12h3.047V9.356c0-3.007 1.792-4.668 4.533-4.668 1.312 0 2.686.234 2.686.234v2.953h-1.513c-1.49 0-1.956.925-1.956 1.874V12h3.328l-.532 3.47h-2.796v8.38A12.002 12.002 0 0 0 24 12z"/></svg><span>Facebook</span></a>
             <a href="#" className="block text-sm text-gray-200 mb-2.5 hover:text-orange">Instagram</a>
             <a href="#" className="block text-sm text-gray-200 mb-2.5 hover:text-orange">X</a>
             <a href="mailto:seolinknest@gmail.com" className="block text-sm text-gray-200 mb-2.5 hover:text-orange">
