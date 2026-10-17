@@ -2,6 +2,7 @@ import { Routes, Route, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import Navbar from './components/Navbar.jsx';
 import Footer from './components/Footer.jsx';
+import WhatsAppButton from './components/WhatsAppButton.jsx';
 import CustomCursor from './components/CustomCursor.jsx';
 import Home from './pages/Home.jsx';
 import About from './pages/About.jsx';
@@ -41,6 +42,7 @@ export default function App() {
         </Routes>
       </main>
       <Footer />
+      <WhatsAppButton />
     </div>
   );
 }
