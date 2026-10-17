@@ -284,7 +284,7 @@ export default function Home() {
       </div>
     </div>
 
-    <div className="block pt-2 space-y-10">
+    <div className="block pt-14 space-y-10">
         <a href="/guest-posting-article" className="block group cursor-pointer">
           <img src="/guest-posting-card-2.png" alt="Guest Posting and SEO" className="w-full aspect-[16/9] object-cover rounded-sm border border-gray-200" />
           <p className="text-xs text-orange font-medium mt-3">GUEST POSTING & SEO</p>
