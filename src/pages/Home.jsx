@@ -195,7 +195,7 @@ export default function Home() {
 {/* Guest Posting Article */}
 <section className="py-8 md:py-12">
   <div className="max-w-wrap mx-auto px-6 md:px-10">
-    <div className="grid lg:grid-cols-[minmax(0,1fr)_320px] gap-12 items-start">
+    <div className="grid lg:grid-cols-[minmax(0,1.15fr)_minmax(360px,0.85fr)] gap-8 xl:gap-12 items-stretch">
       <div className="max-w-4xl">
       <p className="text-sm text-orange font-medium mb-4">
         GUEST POSTING & SEO
@@ -334,11 +334,11 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-            <aside className="border border-gray-800 rounded-sm p-6 md:p-8 relative overflow-hidden">
+            <aside className="border border-gray-800 rounded-sm p-8 md:p-10 lg:p-8 xl:p-10 relative overflow-hidden flex flex-col justify-center min-h-full">
               <div className="absolute top-0 right-0 w-32 h-32 bg-orange/10 rounded-full blur-3xl" />
               <p className="text-xs tracking-[0.2em] text-orange font-medium mb-3">LINKNEST ADVANTAGE</p>
-              <h3 className="font-display text-2xl font-semibold text-white leading-tight">Your SEO Growth Starts with Quality Links.</h3>
-              <p className="text-sm text-muted leading-6 mt-4">Discover relevant websites, evaluate opportunities, and build a stronger backlink profile with a clear strategy.</p>
+              <h3 className="font-display text-3xl xl:text-4xl font-semibold text-white leading-tight">Your SEO Growth Starts with Quality Links.</h3>
+              <p className="text-base text-muted leading-7 mt-5">Discover relevant websites, evaluate opportunities, and build a stronger backlink profile with a clear strategy.</p>
               <div className="mt-8 space-y-4">
                 {['Discover relevant websites', 'Evaluate quality opportunities', 'Build meaningful links'].map((item, index) => (
                   <div key={item} className="flex items-center gap-3 border-b border-gray-800 pb-4">
