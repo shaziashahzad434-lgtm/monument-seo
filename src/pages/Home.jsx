@@ -323,7 +323,7 @@ export default function Home() {
       <section className="py-8 md:py-12">
         <div className="max-w-wrap mx-auto px-6 md:px-10">
           <SectionHeading title="WHAT WE OFFER" subtitle="Eight disciplines, one team — coordinated instead of contracted out." />
-          <div className="grid lg:grid-cols-[minmax(0,1fr)_320px] gap-12 items-start">
+          <div className="grid lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] gap-8 xl:gap-12 items-stretch">
             <div>
               {services.map((s) => (
                 <ServiceRow key={s.num} s={s} />
@@ -334,20 +334,16 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-            <aside className="border border-gray-800 rounded-sm p-8 md:p-10 lg:p-8 xl:p-10 relative overflow-hidden flex flex-col justify-center min-h-full">
-              <div className="absolute top-0 right-0 w-32 h-32 bg-orange/10 rounded-full blur-3xl" />
-              <p className="text-xs tracking-[0.2em] text-orange font-medium mb-3">LINKNEST ADVANTAGE</p>
-              <h3 className="font-display text-3xl xl:text-4xl font-semibold text-white leading-tight">Your SEO Growth Starts with Quality Links.</h3>
-              <p className="text-base text-muted leading-7 mt-5">Discover relevant websites, evaluate opportunities, and build a stronger backlink profile with a clear strategy.</p>
-              <div className="mt-8 space-y-4">
-                {['Discover relevant websites', 'Evaluate quality opportunities', 'Build meaningful links'].map((item, index) => (
-                  <div key={item} className="flex items-center gap-3 border-b border-gray-800 pb-4">
-                    <span className="text-orange text-sm font-medium">{String(index + 1).padStart(2, '0')}</span>
-                    <span className="text-sm text-gray-300">{item}</span>
-                  </div>
-                ))}
+            <aside className="min-w-0 flex flex-col gap-5">
+              <div className="relative overflow-hidden rounded-sm border border-gray-800 bg-black">
+                <img src="/backlink-network.png" alt="Websites connected through a backlink network" className="block w-full h-auto object-cover" />
               </div>
-              <Link to="/guest-post-sites" className="mt-7 inline-flex text-sm font-semibold text-orange hover:text-white transition-colors">Explore Guest Post Sites →</Link>
+              <div className="border-l-2 border-orange pl-5 py-1">
+                <p className="text-xs tracking-[0.2em] text-orange font-medium mb-2">LINKNEST ADVANTAGE</p>
+                <h3 className="font-display text-2xl xl:text-3xl font-semibold text-white leading-tight">Build Better Backlinks. Grow Your Website.</h3>
+                <p className="text-sm text-muted leading-6 mt-3">Discover relevant websites, evaluate quality opportunities, and strengthen your backlink profile with a clear strategy.</p>
+                <Link to="/guest-post-sites" className="mt-5 inline-flex text-sm font-semibold text-orange hover:text-white transition-colors">Explore Guest Post Sites →</Link>
+              </div>
             </aside>
           </div>
         </div>
