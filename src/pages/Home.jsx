@@ -323,15 +323,32 @@ export default function Home() {
       <section className="py-8 md:py-12">
         <div className="max-w-wrap mx-auto px-6 md:px-10">
           <SectionHeading title="WHAT WE OFFER" subtitle="Eight disciplines, one team — coordinated instead of contracted out." />
-          <div>
-            {services.map((s) => (
-              <ServiceRow key={s.num} s={s} />
-            ))}
-          </div>
-          <div className="mt-8">
-            <Link to="/services" className="text-sm border-b border-white pb-1 hover:border-orange hover:text-orange transition-colors">
-              See every service in detail →
-            </Link>
+          <div className="grid lg:grid-cols-[minmax(0,1fr)_320px] gap-12 items-start">
+            <div>
+              {services.map((s) => (
+                <ServiceRow key={s.num} s={s} />
+              ))}
+              <div className="mt-8">
+                <Link to="/services" className="text-sm border-b border-white pb-1 hover:border-orange hover:text-orange transition-colors">
+                  See every service in detail →
+                </Link>
+              </div>
+            </div>
+            <aside className="border border-gray-800 rounded-sm p-6 md:p-8 relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-orange/10 rounded-full blur-3xl" />
+              <p className="text-xs tracking-[0.2em] text-orange font-medium mb-3">LINKNEST ADVANTAGE</p>
+              <h3 className="font-display text-2xl font-semibold text-white leading-tight">Your SEO Growth Starts with Quality Links.</h3>
+              <p className="text-sm text-muted leading-6 mt-4">Discover relevant websites, evaluate opportunities, and build a stronger backlink profile with a clear strategy.</p>
+              <div className="mt-8 space-y-4">
+                {['Discover relevant websites', 'Evaluate quality opportunities', 'Build meaningful links'].map((item, index) => (
+                  <div key={item} className="flex items-center gap-3 border-b border-gray-800 pb-4">
+                    <span className="text-orange text-sm font-medium">{String(index + 1).padStart(2, '0')}</span>
+                    <span className="text-sm text-gray-300">{item}</span>
+                  </div>
+                ))}
+              </div>
+              <Link to="/guest-post-sites" className="mt-7 inline-flex text-sm font-semibold text-orange hover:text-white transition-colors">Explore Guest Post Sites →</Link>
+            </aside>
           </div>
         </div>
       </section>
